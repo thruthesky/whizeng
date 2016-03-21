@@ -17,19 +17,32 @@
                 <a href="<?php echo home_url()?>"><img src="<?php option('lms', 'logo')?>"></a>
             </div>
             <nav class="top-menu">
-                Menu A, Menu B, Menu C, Menu D
+                <ul>
+                    <li><?php _e('Login', 'lms')?></li>
+                    <li><?php _e('Register', 'lms')?></li>
+                    <li><?php _e('Help', 'lms')?></li>
+                </ul>
             </nav>
             <nav class="menu">
                 <ul>
                     <li>
-                        <div>Menu 1</div>
+                        <div><?php _e('About  Us', 'lms')?></div>
                     </li>
-                    <li><div>Menu 2</div></li>
-                    <li><div>Menu 3</div></li>
-                    <li><div>Menu 4</div></li>
-                    <li><div>Menu 5</div></li>
-                    <li><div>Menu 6</div></li>
-                    <li><div>Menu 7</div></li>
+                    <li>
+                        <div><?php _e('Teacher List', 'lms')?></div>
+                    </li>
+                    <li>
+                        <div><?php _e('Level Test', 'lms')?></div>
+                    </li>
+                    <li>
+                        <div><?php _e('Enrollment', 'lms')?></div>
+                    </li>
+                    <li>
+                        <div><?php _e('Curriculum', 'lms')?></div>
+                    </li>
+                    <li>
+                        <div><?php _e('QnA', 'lms')?></div>
+                    </li>
                 </ul>
             </nav>
         </div>
