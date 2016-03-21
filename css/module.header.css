@@ -1,0 +1,33 @@
+header {
+    background-color: #e8e8e8;
+}
+header .logo img {
+    max-height: 100px;
+}
+
+header nav.menu {
+    overflow:auto;
+}
+
+header nav.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style : none;
+}
+header nav.menu ul li {
+    float: left;
+}
+
+@media all and ( min-width: 600px ) {
+    header nav.top-menu {
+        position: absolute;
+        top: .2em;
+        right: .2em;
+    }
+    header nav.menu {
+        position: absolute;
+        bottom: .1em;
+        right: .2em;
+    }
+}
+

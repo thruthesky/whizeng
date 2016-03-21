@@ -1,0 +1,36 @@
+aside.sidebar {
+    background-color: #ebf1fc;
+    overflow: auto;
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar ul li {
+    float:left;
+    border-right: 4px solid white;
+    box-sizing: border-box;
+    width: 20%;
+    height: 100px;
+}
+.sidebar ul li:last-child {
+    border-right: 0;
+}
+
+
+@media all and ( min-width: 600px ) {
+    aside.sidebar {
+        position: fixed;
+        top: 160px;
+    }
+    .sidebar ul li {
+        float: none;
+        border: 0;
+        width: 100px;
+        background-color: #c38a91;
+    }
+}
+

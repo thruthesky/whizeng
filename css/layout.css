@@ -1,0 +1,31 @@
+header {
+    position: relative;
+}
+
+section.content {
+    position: relative;
+    margin: 0 auto;
+    max-width: 980px;
+    min-height: 800px;
+}
+
+
+
+@media all and ( min-width: 600px ) { /** 600px and above */
+    header {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        overflow: hidden;
+    }
+    section.content {
+        margin: 100px auto 0;
+    }
+}
+
+@media all and ( min-width: 900px ) { /** 900px and above */
+
+}
