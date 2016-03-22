@@ -2,9 +2,13 @@
 get_header();
 
 
-if ( strpos(segment(0), 'menu') !== FALSE ) {
-    $menu = segment(0);
-    include get_template_directory() . "/page/$menu.php";
+/**
+ * @brief routes
+ */
+$segment = segment(0);
+$path = get_template_directory() . "/page/$segment.php";
+if ( file_exists($path) ) {
+    include $path;
 }
 else if ( have_posts() ) {
     while ( have_posts() ) {

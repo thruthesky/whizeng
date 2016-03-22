@@ -18,30 +18,33 @@
             <nav class="top-menu">
                 <ul>
                     <li><span class="dashicons dashicons-menu menu-icon"></span></li>
-                    <li><a href="<?php hd()?>top-menu1"><?php _e('Login', 'lms')?></a></li>
-                    <li><a href="<?php hd()?>top-menu2"><?php _e('Register', 'lms')?></a></li>
-                    <li><a href="<?php hd()?>top-menu3"><?php _e('Help', 'lms')?></a></li>
+                    <li><a href="<?php hd()?>login"><?php _e('Login', 'lms')?></a></li>
+                    <li><a href="<?php hd()?>register"><?php _e('Register', 'lms')?></a></li>
+                    <li><a href="<?php hd()?>help"><?php _e('Help', 'lms')?></a></li>
                 </ul>
             </nav>
             <nav class="menu">
                 <ul>
                     <li>
-                        <div><a href="<?php hd()?>menu1"><?php _e('About  Us', 'lms')?></a></div>
+                        <div><a href="<?php hd()?>about-us"><?php _e('About  Us', 'lms')?></a></div>
                     </li>
                     <li>
-                        <div><a href="<?php hd()?>menu2"><?php _e('Teacher List', 'lms')?></a></div>
+                        <div><a href="<?php hd()?>teacher-list"><?php _e('Teacher List', 'lms')?></a></div>
                     </li>
                     <li>
-                        <div><a href="<?php hd()?>menu3"><?php _e('Level Test', 'lms')?></a></div>
+                        <div><a href="<?php hd()?>level-test"><?php _e('Level Test', 'lms')?></a></div>
                     </li>
                     <li>
-                        <div><a href="<?php hd()?>menu4"><?php _e('Enrollment', 'lms')?></a></div>
+                        <div><a href="<?php hd()?>enrollment"><?php _e('Enrollment', 'lms')?></a></div>
                     </li>
                     <li>
-                        <div><a href="<?php hd()?>menu5"><?php _e('Curriculum', 'lms')?></a></div>
+                        <div><a href="<?php hd()?>curriculum"><?php _e('Curriculum', 'lms')?></a></div>
                     </li>
                     <li>
-                        <div><a href="<?php hd()?>menu6"><?php _e('QnA', 'lms')?></a></div>
+                        <div><a href="<?php hd()?>reservation"><?php _e('Reservation', 'lms')?></a></div>
+                    </li>
+                    <li>
+                        <div><a href="forums/forum/qna/"><?php _e('QnA', 'lms')?></a></div>
                     </li>
                     <li class="close">
                         <div><a href="#"><?php _e('Close', 'lms')?></a></div>
