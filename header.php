@@ -11,13 +11,13 @@
 <div class="layout">
 
     <header>
-
-        <div>
+        <div class="header-inner">
             <div class="logo">
                 <a href="<?php echo home_url()?>"><img src="<?php option('lms', 'logo')?>"></a>
             </div>
             <nav class="top-menu">
                 <ul>
+                    <li><span class="dashicons dashicons-menu menu-icon"></span></li>
                     <li><a href="<?php hd()?>top-menu1"><?php _e('Login', 'lms')?></a></li>
                     <li><a href="<?php hd()?>top-menu2"><?php _e('Register', 'lms')?></a></li>
                     <li><a href="<?php hd()?>top-menu3"><?php _e('Help', 'lms')?></a></li>
@@ -43,6 +43,9 @@
                     <li>
                         <div><a href="<?php hd()?>menu6"><?php _e('QnA', 'lms')?></a></div>
                     </li>
+                    <li class="close">
+                        <div><a href="#"><?php _e('Close', 'lms')?></a></div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -56,7 +59,6 @@
                 <li>Slide Bar Menu 2</li>
                 <li>Slide Bar Menu 3</li>
                 <li>Slide Bar Menu 4</li>
-                <li>Slide Bar Menu 5</li>
             </ul>
         </aside>
 

@@ -1,5 +1,9 @@
 header {
+}
+.header-inner {
     position: relative;
+    margin: 0 auto;
+    max-width: 980px;
 }
 
 section.content {
@@ -18,7 +22,7 @@ section.content {
         top: 0;
         left: 0;
         right: 0;
-        height: 100px;
+        height: 120px;
         overflow: hidden;
     }
     section.content {

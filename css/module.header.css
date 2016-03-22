@@ -1,39 +1,116 @@
+/** Follow Strict SMACSS */
 header {
     background-color: #e8e8e8;
 }
+
+
+
+/** Logo */
+
 header .logo img {
-    max-height: 100px;
+    display:block;
+    max-width: 100%;
+    max-height: 120px;
 }
+
+/** EO Logo */
+
+
+
+/** Nav.Top-Menu module */
+
 
 header nav.menu, nav.top-menu {
     overflow:auto;
 }
 
-header nav.menu ul, nav.top-menu ul {
+nav.top-menu {
+    background-color: #384374;
+    color:white;
+}
+
+nav.top-menu a {
+    color:inherit;
+}
+
+nav.top-menu ul {
     margin: 0;
     padding: 0;
     list-style : none;
 }
-header nav.menu ul li, nav.top-menu ul li {
+
+
+
+nav.top-menu ul li {
     float: left;
-    margin-left: 2px;
+    display:block;
+}
+nav.top-menu ul li:last-child {
+    float:right;
 }
 
-header a {
-    text-decoration: none;
-    padding: 0 10px;
+nav.top-menu ul li a {
+    display:inline-block;
+    padding: 1em .8em
+}
+
+.top-menu .menu-icon {
+    padding: .18em .6em 0 .2em;
+    font-size: 2.4em;
+    cursor: pointer;
 }
 
 @media all and ( min-width: 600px ) {
-    header nav.top-menu {
+    .top-menu {
         position: absolute;
         top: .2em;
-        right: .2em;
+        right: 0;
     }
-    header nav.menu {
-        position: absolute;
-        bottom: .1em;
-        right: .2em;
+    .top-menu .menu-icon {
+        display:none;
     }
 }
+
+
+/** EO ( End Of ) top menu module */
+
+
+/** nav.menu      Main Menu */
+
+header .menu {
+    display:none;
+    overflow:auto;
+}
+
+header .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style : none;
+}
+
+header .menu ul li {
+}
+
+header .menu ul li a {
+    display: block;
+    padding:.4em .6em;
+    background-color: #06112d;
+    color:white;
+}
+
+@media all and ( min-width: 600px ) {
+    header .menu {
+        position: absolute;
+        display: block;
+        bottom: .1em;
+        right: 0;
+    }
+    header .menu ul li {
+        float:left;
+    }
+}
+
+/** eo nav.menu */
+
+
 

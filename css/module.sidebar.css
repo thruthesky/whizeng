@@ -11,20 +11,16 @@ aside.sidebar {
 
 .sidebar ul li {
     float:left;
-    border-right: 4px solid white;
     box-sizing: border-box;
-    width: 20%;
+    width: 25%;
     height: 100px;
 }
-.sidebar ul li:last-child {
-    border-right: 0;
-}
-
 
 @media all and ( min-width: 600px ) {
     aside.sidebar {
-        position: fixed;
-        top: 160px;
+        position: absolute;
+        top: 100px;
+        left: -108px;
     }
     .sidebar ul li {
         float: none;

@@ -1,5 +1,6 @@
 section.content {
     position: relative;
     padding: .6em;
+    box-sizing: border-box;
     background-color: white;
 }
