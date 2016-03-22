@@ -5,17 +5,23 @@ header .logo img {
     max-height: 100px;
 }
 
-header nav.menu {
+header nav.menu, nav.top-menu {
     overflow:auto;
 }
 
-header nav.menu ul {
+header nav.menu ul, nav.top-menu ul {
     margin: 0;
     padding: 0;
     list-style : none;
 }
-header nav.menu ul li {
+header nav.menu ul li, nav.top-menu ul li {
     float: left;
+    margin-left: 2px;
+}
+
+header a {
+    text-decoration: none;
+    padding: 0 10px;
 }
 
 @media all and ( min-width: 600px ) {

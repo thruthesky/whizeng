@@ -1,0 +1,5 @@
+header a:visited,
+header a:hover,
+header a:active {
+    color:red;
+}

@@ -18,30 +18,30 @@
             </div>
             <nav class="top-menu">
                 <ul>
-                    <li><?php _e('Login', 'lms')?></li>
-                    <li><?php _e('Register', 'lms')?></li>
-                    <li><?php _e('Help', 'lms')?></li>
+                    <li><a href="<?php hd()?>top-menu1"><?php _e('Login', 'lms')?></a></li>
+                    <li><a href="<?php hd()?>top-menu2"><?php _e('Register', 'lms')?></a></li>
+                    <li><a href="<?php hd()?>top-menu3"><?php _e('Help', 'lms')?></a></li>
                 </ul>
             </nav>
             <nav class="menu">
                 <ul>
                     <li>
-                        <div><?php _e('About  Us', 'lms')?></div>
+                        <div><a href="<?php hd()?>menu1"><?php _e('About  Us', 'lms')?></a></div>
                     </li>
                     <li>
-                        <div><?php _e('Teacher List', 'lms')?></div>
+                        <div><a href="<?php hd()?>menu2"><?php _e('Teacher List', 'lms')?></a></div>
                     </li>
                     <li>
-                        <div><?php _e('Level Test', 'lms')?></div>
+                        <div><a href="<?php hd()?>menu3"><?php _e('Level Test', 'lms')?></a></div>
                     </li>
                     <li>
-                        <div><?php _e('Enrollment', 'lms')?></div>
+                        <div><a href="<?php hd()?>menu4"><?php _e('Enrollment', 'lms')?></a></div>
                     </li>
                     <li>
-                        <div><?php _e('Curriculum', 'lms')?></div>
+                        <div><a href="<?php hd()?>menu5"><?php _e('Curriculum', 'lms')?></a></div>
                     </li>
                     <li>
-                        <div><?php _e('QnA', 'lms')?></div>
+                        <div><a href="<?php hd()?>menu6"><?php _e('QnA', 'lms')?></a></div>
                     </li>
                 </ul>
             </nav>
