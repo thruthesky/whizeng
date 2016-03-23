@@ -24,3 +24,10 @@ add_action( 'wp_enqueue_scripts', function () {
 });
 
 
+add_filter('template_redirect', function () {
+    global $wp_query;
+    if ( is_404() ) {
+        status_header( 200 );
+        $wp_query->is_404=false;
+    }
+});

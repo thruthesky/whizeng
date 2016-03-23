@@ -19,7 +19,7 @@
                 <ul>
                     <li><img src="<?php echo td() . '/img/Menu.png' ?>" class="menu-icon"></li>
                     <li>
-                        <a href="<?php hd()?>login">
+                        <a href="<?php hd()?>log-in">
                             <img src="<?php echo td() . '/img/Login.png' ?>">
                             <span><?php _e('Login', 'lms')?></span>
                         </a>
@@ -44,10 +44,7 @@
                         <div><a href="<?php hd()?>about-us"><?php _e('About  Us', 'lms')?></a></div>
                     </li>
                     <li>
-                        <div><a href="<?php hd()?>teacher-list"><?php _e('Teacher List', 'lms')?></a></div>
-                    </li>
-                    <li>
-                        <div><a href="<?php hd()?>level-test"><?php _e('Level Test', 'lms')?></a></div>
+                          <div><a href="<?php hd()?>level-test"><?php _e('Level Test', 'lms')?></a></div>
                     </li>
                     <li>
                         <div><a href="<?php hd()?>enrollment"><?php _e('Enrollment', 'lms')?></a></div>

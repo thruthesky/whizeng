@@ -7,6 +7,7 @@ get_header();
  */
 $segment = segment(0);
 $path = get_template_directory() . "/page/$segment.php";
+
 if ( file_exists($path) ) {
     include $path;
 }

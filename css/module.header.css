@@ -93,12 +93,12 @@ header .menu ul li a {
 @media all and ( min-width: 600px ) {
     header .menu {
         position: absolute;
-        display: block;
+        display: block!important;
         bottom: .1em;
         right: 0;
     }
     header .menu ul li {
-        float:left;
+        float: left;
     }
     .menu .close {
         display:none;
