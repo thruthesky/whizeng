@@ -17,10 +17,25 @@
             </div>
             <nav class="top-menu">
                 <ul>
-                    <li><span class="dashicons dashicons-menu menu-icon"></span></li>
-                    <li><a href="<?php hd()?>login"><?php _e('Login', 'lms')?></a></li>
-                    <li><a href="<?php hd()?>register"><?php _e('Register', 'lms')?></a></li>
-                    <li><a href="<?php hd()?>help"><?php _e('Help', 'lms')?></a></li>
+                    <li><img src="<?php echo td() . '/img/Menu.png' ?>" class="menu-icon"></li>
+                    <li>
+                        <a href="<?php hd()?>login">
+                            <img src="<?php echo td() . '/img/Login.png' ?>">
+                            <span><?php _e('Login', 'lms')?></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php hd()?>register">
+                            <img src="<?php echo td() . '/img/Register.png' ?>" >
+                            <span><?php //_e('Register', 'lms')?></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php hd()?>help">
+                            <img src="<?php echo td() . '/img/Help.png' ?>" >
+                            <span><?php //_e('Help', 'lms')?></span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <nav class="menu">
@@ -58,10 +73,10 @@
 
         <aside class="sidebar">
             <ul>
-                <li>Slide Bar Menu 1</li>
-                <li>Slide Bar Menu 2</li>
-                <li>Slide Bar Menu 3</li>
-                <li>Slide Bar Menu 4</li>
+                <li><a href="#1"><img src="<?php echo td() . '/img/360_03_01.png' ?>" ></a></li>
+                <li><a href="#2"><img src="<?php echo td() . '/img/360_03_02.png' ?>"></a></li>
+                <li><a href="#3"><img src="<?php echo td() . '/img/360_03_03.png' ?>"></a></li>
+                <li><a href="#4"><img src="<?php echo td() . '/img/360_03_04.png' ?>"></a></li>
             </ul>
         </aside>
 
