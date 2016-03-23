@@ -58,10 +58,10 @@
 
         <aside class="sidebar">
             <ul>
-                <li>Slide Bar Menu 1</li>
-                <li>Slide Bar Menu 2</li>
-                <li>Slide Bar Menu 3</li>
-                <li>Slide Bar Menu 4</li>
+                <li><a href="#1"><img src="<?php echo td() . '/img/360_03_01.png' ?>" ></a></li>
+                <li><a href="#2"><img src="<?php echo td() . '/img/360_03_02.png' ?>"></a></li>
+                <li><a href="#3"><img src="<?php echo td() . '/img/360_03_03.png' ?>"></a></li>
+                <li><a href="#4"><img src="<?php echo td() . '/img/360_03_04.png' ?>"></a></li>
             </ul>
         </aside>
 

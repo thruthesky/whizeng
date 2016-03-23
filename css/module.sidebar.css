@@ -11,9 +11,17 @@ aside.sidebar {
 
 .sidebar ul li {
     float:left;
-    box-sizing: border-box;
     width: 25%;
-    height: 100px;
+    height: 95px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0.3125em 0.125em;
+}
+.sidebar ul li:first-child {
+    padding-left: .25em;
+}
+.sidebar ul li:last-child {
+    padding-right: 0.25em;
 }
 
 @media all and ( min-width: 600px ) {
