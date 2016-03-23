@@ -24,17 +24,3 @@ add_action( 'wp_enqueue_scripts', function () {
 });
 
 
-
-add_action( 'register_form', function() {
-    echo "
-    First Name : <input name='first_name'><br>
-    ";
-});
-add_filter( 'bbp_user_register_redirect_to', function() {
-    return home_url('/');
-});
-add_action( 'user_register', function ( $user_id ) {
-    write_log($_POST);
-    write_log($user_id);
-    update_user_meta($user_id, 'first_name', $_POST['first_name']);
-}, 10, 1);
