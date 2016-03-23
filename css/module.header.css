@@ -25,7 +25,6 @@ header nav.menu, nav.top-menu {
 nav.top-menu {
     background-color: #384374;
     color:white;
-    height: 40px;
 }
 
 nav.top-menu ul {
@@ -44,11 +43,8 @@ nav.top-menu ul li:last-child {
 
 nav.top-menu ul li a {
     display:inline-block;
-}
-nav.top-menu ul li a span {
-    bottom: 0;
-    position: absolute;
-    font-size: .8em;
+    color: inherit;
+    padding: .6em .8em;
 }
 
 

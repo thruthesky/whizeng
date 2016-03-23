@@ -20,20 +20,17 @@
                     <li><img src="<?php echo td() . '/img/Menu.png' ?>" class="menu-icon"></li>
                     <li>
                         <a href="<?php hd()?>log-in">
-                            <img src="<?php echo td() . '/img/Login.png' ?>">
                             <span><?php _e('Login', 'lms')?></span>
                         </a>
                     </li>
                     <li>
                         <a href="<?php hd()?>register">
-                            <img src="<?php echo td() . '/img/Register.png' ?>" >
-                            <span><?php //_e('Register', 'lms')?></span>
+                            <span><?php _e('Register', 'lms')?></span>
                         </a>
                     </li>
                     <li>
                         <a href="<?php hd()?>help">
-                            <img src="<?php echo td() . '/img/Help.png' ?>" >
-                            <span><?php //_e('Help', 'lms')?></span>
+                            <span><?php _e('Help', 'lms')?></span>
                         </a>
                     </li>
                 </ul>
