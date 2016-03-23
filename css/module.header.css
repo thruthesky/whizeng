@@ -3,8 +3,6 @@ header {
     background-color: #e8e8e8;
 }
 
-
-
 /** Logo */
 
 header .logo img {
@@ -27,10 +25,7 @@ header nav.menu, nav.top-menu {
 nav.top-menu {
     background-color: #384374;
     color:white;
-}
-
-nav.top-menu a {
-    color:inherit;
+    height: 40px;
 }
 
 nav.top-menu ul {
@@ -38,8 +33,6 @@ nav.top-menu ul {
     padding: 0;
     list-style : none;
 }
-
-
 
 nav.top-menu ul li {
     float: left;
@@ -51,14 +44,13 @@ nav.top-menu ul li:last-child {
 
 nav.top-menu ul li a {
     display:inline-block;
-    padding: 1em .8em
+}
+nav.top-menu ul li a span {
+    bottom: 0;
+    position: absolute;
+    font-size: .8em;
 }
 
-.top-menu .menu-icon {
-    padding: .18em .6em 0 .2em;
-    font-size: 2.4em;
-    cursor: pointer;
-}
 
 @media all and ( min-width: 600px ) {
     .top-menu {
