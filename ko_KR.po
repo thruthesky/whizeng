@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Whiz English Design\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Thu Mar 24 2016 20:37:27 GMT+0900 (Korea Standard Time)\n"
+"PO-Revision-Date: Thu Mar 24 2016 20:41:15 GMT+0900 (Korea Standard Time)\n"
+"Last-Translator: admin <thruthesky@gmail.com>\n"
+"Language-Team: \n"
+"Language: Korean\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Loco-Target-Locale: ko_KR"
+
+#: front-page.php:126
+msgid "Enter Class Room"
+msgstr "강의실 입장"
+
+#: front-page.php:133
+msgid "Reservations"
+msgstr "예약된 수업"
+
+#: front-page.php:140
+msgid "Past Classes"
+msgstr "지난 수업"
+
+#: front-page.php:147
+msgid "Enrollment Fee"
+msgstr "수업료 안내"
+
+#: front-page.php:154
+msgid "Q & A"
+msgstr "질문과 답변"
+
+#: front-page.php:161
+msgid "Class Comment"
+msgstr "수강 후기"
+
+#: header.php:25
+msgid "Login"
+msgstr "로그인"
+
+#: header.php:30
+msgid "Register"
+msgstr "회원가입"
+
+#: header.php:35
+msgid "Help"
+msgstr "도움말"
+
+#: header.php:43
+msgid "About  Us"
+msgstr "인사말"
+
+#: header.php:46
+msgid "Level Test"
+msgstr "레벨테스트"
+
+#: header.php:49
+msgid "Enrollment"
+msgstr "수강신청"
+
+#: header.php:52
+msgid "Curriculum"
+msgstr "수업과정"
+
+#: header.php:55
+msgid "Reservation"
+msgstr "예약된 수업"
+
+#: header.php:58
+msgid "QnA"
+msgstr "질문과 답변"
+
+#: header.php:61
+msgid "Close"
+msgstr "닫기"
+
+#. Name of the theme
+msgid "Whiz English Design"
+msgstr "위즈잉글리시 디자인"

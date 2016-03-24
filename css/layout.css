@@ -1,5 +1,5 @@
 header {
-    z-index: 9876543210124;
+    z-index: 1234567891;
 }
 .header-inner {
     position: relative;
@@ -10,7 +10,14 @@ header {
 section.content {
     position: relative;
     margin: 0 auto;
+    max-width: 980px;
 }
+
+body.home section.content {
+    max-width: 4096px;
+}
+
+
 
 .content section.info > div,
 .content section.desc > div {

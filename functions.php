@@ -39,3 +39,8 @@ add_filter('template_redirect', function () {
         $wp_query->is_404=false;
     }
 });
+
+add_action('after_setup_theme', 'theme_init');
+function theme_init(){
+    load_theme_textdomain('whizeng', get_template_directory());
+}

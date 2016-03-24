@@ -22,17 +22,17 @@
                     </li>
                     <li>
                         <a href="<?php hd()?>log-in">
-                            <span><?php _e('Login', 'lms')?></span>
+                            <span><?php _e('Login', 'whizeng')?></span>
                         </a>
                     </li>
                     <li>
                         <a href="<?php hd()?>register">
-                            <span><?php _e('Register', 'lms')?></span>
+                            <span><?php _e('Register', 'whizeng')?></span>
                         </a>
                     </li>
                     <li>
                         <a href="<?php hd()?>help">
-                            <span><?php _e('Help', 'lms')?></span>
+                            <span><?php _e('Help', 'whizeng')?></span>
                         </a>
                     </li>
                 </ul>
@@ -40,25 +40,25 @@
             <nav class="menu">
                 <ul>
                     <li>
-                        <div><a href="<?php hd()?>about-us"><?php _e('About  Us', 'lms')?></a></div>
+                        <div><a href="<?php hd()?>about-us"><?php _e('About  Us', 'whizeng')?></a></div>
                     </li>
                     <li>
-                          <div><a href="<?php hd()?>level-test"><?php _e('Level Test', 'lms')?></a></div>
+                          <div><a href="<?php hd()?>level-test"><?php _e('Level Test', 'whizeng')?></a></div>
                     </li>
                     <li>
-                        <div><a href="<?php hd()?>enrollment"><?php _e('Enrollment', 'lms')?></a></div>
+                        <div><a href="<?php hd()?>enrollment"><?php _e('Enrollment', 'whizeng')?></a></div>
                     </li>
                     <li>
-                        <div><a href="<?php hd()?>curriculum"><?php _e('Curriculum', 'lms')?></a></div>
+                        <div><a href="<?php hd()?>curriculum"><?php _e('Curriculum', 'whizeng')?></a></div>
                     </li>
                     <li>
-                        <div><a href="<?php hd()?>reservation"><?php _e('Reservation', 'lms')?></a></div>
+                        <div><a href="<?php hd()?>reservation"><?php _e('Reservation', 'whizeng')?></a></div>
                     </li>
                     <li>
-                        <div><a href="forums/forum/qna/"><?php _e('QnA', 'lms')?></a></div>
+                        <div><a href="forums/forum/qna/"><?php _e('QnA', 'whizeng')?></a></div>
                     </li>
                     <li class="close">
-                        <div><a href="#"><?php _e('Close', 'lms')?></a></div>
+                        <div><a href="#"><?php _e('Close', 'whizeng')?></a></div>
                     </li>
                 </ul>
             </nav>
