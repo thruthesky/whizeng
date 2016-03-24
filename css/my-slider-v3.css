@@ -75,3 +75,14 @@
 .my-slider nav img:last-child {
     right: 1rem;
 }
+
+
+.text-info {
+    position: absolute;
+    display: block;
+    width:100%;
+}
+.text-info > .inner {
+    max-width: 960px;
+    margin: auto;
+}
