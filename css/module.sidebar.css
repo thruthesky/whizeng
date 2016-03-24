@@ -1,6 +1,7 @@
 aside.sidebar {
     background-color: #ebf1fc;
     overflow: auto;
+    z-index: 9876543210123;
 }
 
 .sidebar ul {
@@ -44,7 +45,4 @@ aside.sidebar {
 
 
 @media all and ( min-width: 1200px ) {
-    aside.sidebar {
-        left: -108px;
-    }
 }

@@ -20,6 +20,7 @@ header .logo img {
 
 header nav.menu, nav.top-menu {
     overflow:auto;
+    overflow-y: hidden;
 }
 
 nav.top-menu {

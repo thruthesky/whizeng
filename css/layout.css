@@ -1,4 +1,5 @@
 header {
+    z-index: 9876543210124;
 }
 .header-inner {
     position: relative;
@@ -9,13 +10,17 @@ header {
 section.content {
     position: relative;
     margin: 0 auto;
+}
+
+.content section.info > div,
+.content section.desc > div {
+    margin: 0 auto;
     max-width: 980px;
 }
 
 @media all and ( min-width: 600px ) { /** 600px and above */
     header {
         position: fixed;
-        z-index: 999;
         top: 0;
         left: 0;
         right: 0;
@@ -23,7 +28,7 @@ section.content {
         overflow: hidden;
     }
     section.content {
-        margin: 100px auto 0;
+        margin: 120px auto 0;
     }
 }
 
