@@ -26,6 +26,10 @@ nav.top-menu {
     background-color: #384374;
     color:white;
 }
+nav.top-menu .menu-icon {
+    font-size: 38px;
+    padding: .1em .6em .1em .2em;
+}
 
 nav.top-menu ul {
     margin: 0;

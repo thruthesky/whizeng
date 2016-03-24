@@ -17,7 +17,9 @@
             </div>
             <nav class="top-menu">
                 <ul>
-                    <li><img src="<?php echo td() . '/img/Menu.png' ?>" class="menu-icon"></li>
+                    <li>
+                        <span class="dashicons dashicons-menu menu-icon"></span>
+                    </li>
                     <li>
                         <a href="<?php hd()?>log-in">
                             <span><?php _e('Login', 'lms')?></span>
@@ -67,10 +69,10 @@
 
         <aside class="sidebar">
             <ul>
-                <li><a href="#1"><img src="<?php echo td() . '/img/360_03_01.png' ?>" ></a></li>
-                <li><a href="#2"><img src="<?php echo td() . '/img/360_03_02.png' ?>"></a></li>
-                <li><a href="#3"><img src="<?php echo td() . '/img/360_03_03.png' ?>"></a></li>
-                <li><a href="#4"><img src="<?php echo td() . '/img/360_03_04.png' ?>"></a></li>
+                <li><a href="#1"><img src="<?php echo td() . '/img/skype_id.png' ?>" ></a></li>
+                <li><a href="#2"><img src="<?php echo td() . '/img/slide_menu_testing.png' ?>"></a></li>
+                <li><a href="#3"><img src="<?php echo td() . '/img/slide_menu_tv.png' ?>"></a></li>
+                <li><a href="#4"><img src="<?php echo td() . '/img/slide_menu_ve.png' ?>"></a></li>
             </ul>
         </aside>
 

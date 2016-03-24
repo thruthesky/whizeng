@@ -3,6 +3,7 @@ body {
     padding:0;
     background-color:grey;
     min-width: 360px;
+    font-family: "Malgun Gothic", "Gulim", serif;
 }
 
 a {

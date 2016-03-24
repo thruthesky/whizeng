@@ -5,23 +5,20 @@ aside.sidebar {
 
 .sidebar ul {
     margin: 0;
-    padding: 0;
+    padding: 2px;
     list-style: none;
 }
 
 .sidebar ul li {
     float:left;
     width: 25%;
-    height: 95px;
     text-align: center;
     box-sizing: border-box;
-    padding: 0.3125em 0.125em;
+    padding: 2px;
 }
-.sidebar ul li:first-child {
-    padding-left: .25em;
-}
-.sidebar ul li:last-child {
-    padding-right: 0.25em;
+.sidebar ul li img {
+    width: 100%;
+    height: auto;
 }
 
 @media all and ( min-width: 600px ) {
@@ -30,11 +27,18 @@ aside.sidebar {
         top: 100px;
         left: 0;
     }
+    .sidebar ul{
+        background-color: #c38a91;
+    }
     .sidebar ul li {
         float: none;
         border: 0;
         width: 100px;
         background-color: #c38a91;
+    }
+    .sidebar ul li img {
+        width: 95%;
+        height: auto;
     }
 }
 

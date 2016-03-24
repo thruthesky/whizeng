@@ -1,0 +1,88 @@
+/** ----------------------- GRID - two column, .grid ------------------------ **/
+.grid3:after {
+    display:block;
+    clear:both;
+    content:'';
+}
+.grid .a {
+    overflow:hidden;
+    width:100%;
+}
+.grid .b {
+    overflow:hidden;
+    width:100%;
+}
+
+@media all and ( min-width: 480px ) { /** 480px and above */
+    .grid .a,
+    .grid .b
+    {
+        width:50%;
+    }
+    .grid .a {
+        float:left;
+    }
+}
+/** ----------------------- GRID - three column, .grid3 ------------------------ **/
+.grid3 {
+    display:block;
+    width:100%;
+    word-break: break-all;
+}
+.grid3 .a,
+.grid3 .b,
+.grid3 .c {
+    overflow:hidden;
+    width:100%;
+}
+
+.grid3 .content {
+    position:relative;
+    display:block;
+    padding:5px 0;
+    box-sizing: border-box;
+}
+.grid3 .content:after {
+    display:block;
+    content:'';
+    clear:both;
+}
+
+.grid3 .b,
+.grid3 .c {
+    width:100%;
+}
+
+@media all and ( min-width: 320px ) { /** 320px and above */
+
+}
+@media all and ( min-width: 600px ) { /** 480px and above */
+    .grid3 .b{
+        display:block;
+    }
+
+    .grid3 .a,
+    .grid3 .b {
+        width:50%;
+    }
+    .grid3 .a,
+    .grid3 .b {
+        float:left;
+    }
+}
+@media all and ( min-width: 720px ) { /** 640px and above */
+
+}
+@media all and ( min-width: 800px ) { /** 800px and above */
+    .grid3 .c{
+        display:block;
+    }
+
+    .grid3 .a,
+    .grid3 .b,
+    .grid3 .c {
+        width:33.33%;
+    }
+
+}
+
