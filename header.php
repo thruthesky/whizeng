@@ -13,7 +13,7 @@
     <header>
         <div class="header-inner">
             <div class="logo">
-                <a href="<?php echo home_url()?>"><img src="<?php option('lms', 'logo')?>"></a>
+                <a href="<?php echo home_url()?>"><img src="<?php opt('lms[logo]', id() . 'logo.jpg')?>"></a>
             </div>
             <nav class="top-menu">
                 <ul>
