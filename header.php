@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Whiz English</title>
     <?php wp_head();?>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
 </head>
 <body <?php body_class( '' ); ?>>
 
@@ -13,7 +14,8 @@
     <header>
         <div class="header-inner">
             <div class="logo">
-                <a href="<?php echo home_url()?>"><img src="<?php opt('lms[logo]', id() . 'logo.jpg')?>"></a>
+                <a href="<?php echo home_url()?>"><img src="<?php option('lms', 'logo')?>"></a>
+                <!--a href="<?php //echo home_url()?>"><img src="<?php //opt('lms[logo]', id() . 'logo.jpg')?>"></a-->
             </div>
             <nav class="top-menu">
                 <ul>
