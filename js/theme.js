@@ -27,5 +27,4 @@ jQuery(function($) {
 
     }
 
-
 });
