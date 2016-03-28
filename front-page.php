@@ -12,8 +12,7 @@ get_header();
         <ul>
             <li>
                 <img src="<?php id()?>/banner/banner_1.jpg">
-
-                <div class="text-info">
+                <div class="text-info one">
                     <div class="inner">
                         <div class="wrapper">
                             <div class="text top">방문과외전문 + 화상영어</div><br>
@@ -30,11 +29,10 @@ get_header();
                         </div>
                     </div>
                 </div>
-
             </li>
             <li>
                 <img src="<?php id()?>/banner/banner_2.jpg">
-                <div class="text-info">
+                <div class="text-info two">
                     <div class="inner">
                         <div class="wrapper">
                             <div class="text-items">
@@ -48,7 +46,7 @@ get_header();
             </li>
             <li>
                 <img src="<?php id()?>/banner/banner_3.jpg">
-                <div class="text-info">
+                <div class="text-info three">
                     <div class="inner">
                         <div class="wrapper">
                             <div class="text top">잉글리쉬월드의 자랑. 최고의 화상영어 선생님과 알찬 수업 과정.</div><br>
@@ -60,7 +58,7 @@ get_header();
             </li>
             <li>
                 <img src="<?php id()?>/banner/banner_4.jpg">
-                <div class="text-info">
+                <div class="text-info four">
                     <div class="inner">
                         <div class="wrapper">
                             <div class="text top">영어는 암기가 아닌 생활 습관! 지겨운 공부는 시간 낭비!</div><br>
@@ -72,7 +70,7 @@ get_header();
             </li>
             <li>
                 <img src="<?php id()?>/banner/banner_5.jpg">
-                <div class="text-info">
+                <div class="text-info five">
                     <div class="inner">
                         <div class="wrapper">
                             <div class="text top">2015년 주니어 겨울 영어 캠프</div><br>
