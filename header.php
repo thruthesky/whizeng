@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Whiz English</title>
     <?php wp_head();?>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
 </head>
 <body <?php body_class( '' ); ?>>
 
@@ -12,8 +13,12 @@
 
     <header>
         <div class="header-inner">
+            <?php
+
+            ?>
             <div class="logo">
                 <a href="<?php echo home_url()?>"><img src="<?php option('lms', 'logo')?>"></a>
+                <!--a href="<?php //echo home_url()?>"><img src="<?php //opt('lms[logo]', id() . 'logo.jpg')?>"></a-->
             </div>
             <nav class="top-menu">
                 <ul>
@@ -21,14 +26,32 @@
                         <span class="dashicons dashicons-menu menu-icon"></span>
                     </li>
                     <li>
-                        <a href="<?php hd()?>log-in">
-                            <span><?php _e('Login', 'whizeng')?></span>
-                        </a>
+                        <?php if ( user()->login() ) : ?>
+                            <?php if ( user()->admin() ) : ?>
+                                <a href="<?php hd()?>wp-admin">
+                                    <span><?php _e('Admin', 'whizeng')?></span>
+                                </a>
+                            <?php else : ?>
+                                <a href="<?php hd()?>log-in">
+                                    <span><?php _e('Profile Update', 'whizeng')?></span>
+                                </a>
+                            <?php endif ?>
+                        <?php else : ?>
+                            <a href="<?php hd()?>log-in">
+                                <span><?php _e('Login', 'whizeng')?></span>
+                            </a>
+                        <?php endif ?>
                     </li>
                     <li>
-                        <a href="<?php hd()?>register">
-                            <span><?php _e('Register', 'whizeng')?></span>
-                        </a>
+                        <?php if ( user()->login() ) : ?>
+                            <a href="<?php echo wp_logout_url( home_url() ); ?>">
+                                <span><?php _e('Logout', 'whizeng')?></span>
+                            </a>
+                        <?php else : ?>
+                            <a href="<?php hd()?>register">
+                                <span><?php _e('Register', 'whizeng')?></span>
+                            </a>
+                        <?php endif ?>
                     </li>
                     <li>
                         <a href="<?php hd()?>help">
@@ -43,7 +66,7 @@
                         <div><a href="<?php hd()?>about-us"><?php _e('About  Us', 'whizeng')?></a></div>
                     </li>
                     <li>
-                          <div><a href="<?php hd()?>level-test"><?php _e('Level Test', 'whizeng')?></a></div>
+                        <div><a href="<?php hd()?>level-test"><?php _e('Level Test', 'whizeng')?></a></div>
                     </li>
                     <li>
                         <div><a href="<?php hd()?>enrollment"><?php _e('Enrollment', 'whizeng')?></a></div>
@@ -55,7 +78,7 @@
                         <div><a href="<?php hd()?>reservation"><?php _e('Reservation', 'whizeng')?></a></div>
                     </li>
                     <li>
-                        <div><a href="forums/forum/qna/"><?php _e('QnA', 'whizeng')?></a></div>
+                        <div><a href="<?php hd()?>forums/forum/qna/"><?php _e('QnA', 'whizeng')?></a></div>
                     </li>
                     <li class="close">
                         <div><a href="#"><?php _e('Close', 'whizeng')?></a></div>

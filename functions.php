@@ -40,6 +40,8 @@ add_filter('template_redirect', function () {
     }
 });
 
+
 add_action('after_setup_theme', function () {
+    remove_admin_bar(true);
     load_theme_textdomain('whizeng', get_template_directory());
 });

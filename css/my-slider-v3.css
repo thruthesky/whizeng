@@ -75,3 +75,360 @@
 .my-slider nav img:last-child {
     right: 1rem;
 }
+
+/* EO of Slider Images */
+
+/* Slider Text Info One */
+
+.text-info.one {
+    position: absolute;
+    top:0;
+    width: 100%;
+
+}
+.text-info.one > .inner {
+    padding-left: 15%;
+    max-width: 960px;
+    margin:auto;
+}
+
+.text-info.one > .inner .text {
+    padding: 10px 10px;
+    display: inline-block;
+}
+
+.text-info.one > .inner .text.top {
+    background-color: #e74c3c;
+    display: inline-block;
+    padding: .6em;
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.text-info.one > .inner .text.bottom {
+    font-size: 1em;
+    margin-bottom: 3%;
+    background-color: rgba(255,255,255,.7);
+    display: inline-block;
+}
+
+.text-info.one > .inner .text.more {
+    position: relative;
+    padding-right: 25px;
+    margin-bottom: 7%;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: .9em;
+    color: #3498db;
+    cursor: pointer;
+}
+
+.text-info.one > .inner .text.more > a {
+    color: #3498db;
+    text-decoration: none;
+    cursor: auto;
+}
+
+.text-info.one > .inner .text.more .triangle {
+    display: block;
+    position: absolute;
+    right: -15px;
+    top: 30%;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #3498db;
+}
+
+/* EO Slider Text Info One */
+
+/* Slider Text Info Two */
+.text-info.two {
+    position: absolute;
+    top:5%;
+    width: 100%;
+
+}
+.text-info.two > .inner {
+    padding-left: 15%;
+    max-width: 960px;
+    margin:auto;
+}
+
+.text-info.two > .inner > .wrapper {
+    width: 220px;
+    height: 220px;
+    display: inline-block;
+    position: relative;
+    background-color: rgba(0,0,0,.6);
+    white-space: normal;
+    border-radius: 100%;
+}
+
+.text-info.two > .inner .text-items {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.text-info.two > .inner .text {
+    padding: 10px 10px;
+    display: inline-block;
+}
+
+.text-info.two > .inner .text.top {
+    padding: 45px 33px 10px 33px;
+    background-color: transparent;
+    font-size: 1.1em;
+    color: #2ecc71;
+    text-align: center;
+}
+
+.text-info.two > .inner .text.bottom {
+    height: 55px;
+    padding: 0 33px;
+    color: #fff;
+    display: block;
+    font-size: .8em;
+    margin-bottom: 0;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.text-info.two > .inner .text.more {
+    position: absolute;
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 10px 10px 10px 10px;
+    background-color: transparent;
+    text-align: center;
+    box-sizing: border-box;
+    color: #3498db;
+    cursor: pointer;
+}
+
+.text-info.two > .inner .text.more > a {
+    color: #2ecc71;
+    text-decoration: none;
+    cursor: auto;
+}
+
+.text-info.two > .inner .text.more .triangle {
+    display: none;
+}
+
+/* EO Slider Text Info Two */
+
+/* Slider Text Info Three */
+.text-info.three {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+}
+.text-info.three > .inner {
+    padding-left: 15%;
+    max-width: 960px;
+    margin:auto;
+}
+
+.text-info.three > .inner .text {
+    padding: 10px 10px;
+    display: inline-block;
+}
+
+.text-info.three > .inner .text.top {
+    background-color: #27ae60;
+    display: inline-block;
+    padding: .6em;
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.text-info.three > .inner .text.bottom {
+    font-size: 1em;
+    margin-bottom: 3%;
+    background-color: rgba(255,255,255,.7);
+    display: inline-block;
+}
+
+.text-info.three > .inner .text.more {
+    position: relative;
+    padding-right: 25px;
+    margin-bottom: 7%;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: .9em;
+    color: #3498db;
+    cursor: pointer;
+}
+
+.text-info.three > .inner .text.more > a {
+    color: #3498db;
+    text-decoration: none;
+    cursor: auto;
+}
+
+.text-info.three > .inner .text.more .triangle {
+    display: block;
+    position: absolute;
+    right: -15px;
+    top: 30%;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #3498db;
+}
+/* EO Slider Text Info Three */
+
+/* Slider Text Info Two */
+
+
+.text-info.four {
+    position: absolute;
+    display: block;
+    top:5%;
+    width: 100%;
+
+}
+.text-info.four > .inner {
+    padding-right: 15%;
+    text-align: right;
+    max-width: 960px;
+    margin:auto;
+}
+
+.text-info.four > .inner > .wrapper {
+    width: 220px;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+    background-color: rgba(0,0,0,.6);
+    white-space: normal;
+    border-radius: 5%;
+    text-align: left;
+}
+
+.text-info.four > .inner .text-items {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.text-info.four > .inner .text {
+    padding: 10px 10px;
+    display: inline-block;
+}
+
+.text-info.four > .inner .text.top {
+    padding: 10px;
+    background-color: transparent;
+    font-size: 1.1em;
+    color: #2ecc71;
+    text-align: center;
+}
+
+.text-info.four > .inner .text.bottom {
+    padding: 10px;
+    color: #fff;
+    display: block;
+    font-size: .8em;
+    margin-bottom: 0;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.text-info.four > .inner .text.more {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+    background-color: transparent;
+    text-align: right;
+    box-sizing: border-box;
+    color: #3498db;
+    cursor: pointer;
+}
+
+.text-info.four > .inner .text.more > a {
+    color: #2ecc71;
+    text-decoration: none;
+    cursor: auto;
+}
+
+.text-info.four > .inner .text.more .triangle {
+    display: none;
+}
+
+/* EO Slider Text Info Four */
+
+/* Slider Text Info One */
+
+.text-info.five {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    width: 100%;
+
+}
+.text-info.five > .inner {
+    padding-right: 15%;
+    max-width: 960px;
+    margin:auto;
+}
+
+.text-info.five > .inner .text {
+    padding: 10px 10px;
+    display: inline-block;
+}
+
+.text-info.five > .inner .text.top {
+    background-color: #95a5a6;
+    display: inline-block;
+    padding: .6em;
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.text-info.five > .inner .text.bottom {
+    font-size: 1em;
+    margin-bottom: 3%;
+    background-color: rgba(255,255,255,.7);
+    display: inline-block;
+}
+
+.text-info.five > .inner .text.more {
+    position: relative;
+    padding-right: 25px;
+    margin-bottom: 7%;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: .9em;
+    color: #3498db;
+    cursor: pointer;
+}
+
+.text-info.five > .inner .text.more > a {
+    color: #3498db;
+    text-decoration: none;
+    cursor: auto;
+}
+
+.text-info.five > .inner .text.more .triangle {
+    display: block;
+    position: absolute;
+    right: -15px;
+    top: 30%;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #3498db;
+}
+
+/* EO Slider Text Info Five */
