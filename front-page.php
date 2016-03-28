@@ -96,7 +96,7 @@ get_header();
         jQuery(function($){
             $('.my-slider').animateMySlider(
                 {
-                    'intervalPageChange' : 995000,
+                    'intervalPageChange' : 3000,
                     'speedPageChange' :     840
                 }
             );
