@@ -40,7 +40,6 @@ add_filter('template_redirect', function () {
     }
 });
 
-add_action('after_setup_theme', 'theme_init');
-function theme_init(){
+add_action('after_setup_theme', function () {
     load_theme_textdomain('whizeng', get_template_directory());
-}
+});
