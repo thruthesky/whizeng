@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Whiz English</title>
     <?php wp_head();?>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
     <script>
         var home_url = "<?php echo home_url()?>";
     </script>

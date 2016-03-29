@@ -1,42 +1,6 @@
-<script>
-    jQuery( function( $ ) {
-        $('section.register form').submit ( function (e) {
-            e.preventDefault();
-            on_submit();
-            var $form = $(this);
-            //console.log( $form.serialize() );
-            //console.log( $form.prop('action') );
-            /* @todo send it thru POST method for safety. */
-            var url = $form.prop('action') + '?' + $form.serialize();
-            console.log(url);
-            $.get(url, function(re) {
-                console.log(re);
-                console.log(re['code']);
-                on_result(re);
-            });
-        });
-
-        function on_submit() {
-            $('.row.spinner').show();
-            $('.row.submit').hide();
-        }
-        function on_result(re) {
-            setTimeout(function(){
-                $('.row.spinner').hide();
-                $('.row.submit').show();
-                if ( re['code'] ) {
-                    var $error = $('.row.error');
-                    $error.html( '<i class="fa fa-exclamation-triangle"></i> ' + re['message'] );
-                    $error.show();
-                }
-                else {
-                    location.href = home_url;
-                }
-
-            }, 500);
-        }
-    });
-</script>
+<?php
+wp_enqueue_script( 'register', td() . '/js/register.js', array('jquery'), '1.0.1', true );
+?>
 <h2>Register</h2>
 <section class="register">
     <form action="<?php echo home_url('/abc/user/registerSubmit')?>" method="POST">

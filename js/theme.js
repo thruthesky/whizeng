@@ -24,7 +24,8 @@ jQuery(function($) {
         var g = t + 100;
 
         $sidebar.animate({ top: g}, 800);
-
     }
+
+
 
 });
