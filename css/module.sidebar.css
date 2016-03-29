@@ -49,6 +49,6 @@ aside.sidebar {
         right: -108px;
     }
     body.home aside.sidebar {
-        left: 0;
+        right: 0;
     }
 }

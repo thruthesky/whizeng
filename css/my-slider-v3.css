@@ -78,44 +78,36 @@
 
 /* EO of Slider Images */
 
-/* Slider Text Info One */
-
-.text-info.one {
+.my-slider .text-info {
     position: absolute;
-    top:0;
     width: 100%;
-
 }
-.text-info.one > .inner {
-    padding-left: 15%;
+
+.my-slider .text-info > .inner {
+    padding: 0 15%;
     max-width: 960px;
     margin:auto;
 }
 
-.text-info.one > .inner .text {
+.my-slider .text-info > .inner .text {
     padding: 10px 10px;
     display: inline-block;
 }
 
-.text-info.one > .inner .text.top {
-    background-color: #e74c3c;
-    display: inline-block;
-    padding: .6em;
+.my-slider .text-info > .inner .text.top {
     color: #fff;
-    font-size: 1.4em;
+    padding: .6em;
 }
 
-.text-info.one > .inner .text.bottom {
-    font-size: 1em;
+.my-slider .text-info > .inner .text.bottom {
     margin-bottom: 3%;
     background-color: rgba(255,255,255,.7);
-    display: inline-block;
 }
 
-.text-info.one > .inner .text.more {
+.my-slider .text-info > .inner .text.more {
     position: relative;
     padding-right: 25px;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
     border-radius: 3px;
     background-color: #fff;
     font-size: .9em;
@@ -123,13 +115,17 @@
     cursor: pointer;
 }
 
-.text-info.one > .inner .text.more > a {
-    color: #3498db;
+.my-slider .text-info > .inner .text.more > a {
     text-decoration: none;
     cursor: auto;
+    color: #3498db;
 }
 
-.text-info.one > .inner .text.more .triangle {
+.my-slider .text-info > .inner .text.more:hover{
+    color:#444;
+}
+
+.my-slider .text-info > .inner .text.more .triangle{
     display: block;
     position: absolute;
     right: -15px;
@@ -141,24 +137,35 @@
     border-left: 5px solid #3498db;
 }
 
+.my-slider .text-info > .inner .text.more:hover .triangle{
+    border-left: 5px solid #444;
+}
+
+/* Slider Text Info One */
+
+.text-info.one {
+    top: 5%;
+}
+
+.text-info.one > .inner .text.top {
+    background-color: #e74c3c;
+    font-size: 1.4em;
+}
+
+.text-info.one > .inner .text.bottom {
+    font-size: 1em;
+}
+
 /* EO Slider Text Info One */
 
 /* Slider Text Info Two */
 .text-info.two {
-    position: absolute;
     top:5%;
-    width: 100%;
-
-}
-.text-info.two > .inner {
-    padding-left: 15%;
-    max-width: 960px;
-    margin:auto;
 }
 
 .text-info.two > .inner > .wrapper {
-    width: 220px;
-    height: 220px;
+    width: 230px;
+    height: 230px;
     display: inline-block;
     position: relative;
     background-color: rgba(0,0,0,.6);
@@ -173,26 +180,20 @@
     height: 100%;
 }
 
-.text-info.two > .inner .text {
-    padding: 10px 10px;
-    display: inline-block;
-}
-
 .text-info.two > .inner .text.top {
-    padding: 45px 33px 10px 33px;
+    padding: 37px 26px 10px 26px;
     background-color: transparent;
-    font-size: 1.1em;
+    font-size: 1em;
     color: #2ecc71;
     text-align: center;
 }
 
 .text-info.two > .inner .text.bottom {
-    height: 55px;
-    padding: 0 33px;
+    height: 63px;
+    padding: 0 22px;
     color: #fff;
     display: block;
     font-size: .8em;
-    margin-bottom: 0;
     background-color: transparent;
     overflow: hidden;
 }
@@ -205,14 +206,11 @@
     background-color: transparent;
     text-align: center;
     box-sizing: border-box;
-    color: #3498db;
-    cursor: pointer;
+    border-radius: 3px;
 }
 
 .text-info.two > .inner .text.more > a {
     color: #2ecc71;
-    text-decoration: none;
-    cursor: auto;
 }
 
 .text-info.two > .inner .text.more .triangle {
@@ -222,88 +220,34 @@
 /* EO Slider Text Info Two */
 
 /* Slider Text Info Three */
+
 .text-info.three {
-    position: absolute;
-    width: 100%;
     right: 0;
     bottom: 0;
-}
-.text-info.three > .inner {
-    padding-left: 15%;
-    max-width: 960px;
-    margin:auto;
-}
-
-.text-info.three > .inner .text {
-    padding: 10px 10px;
-    display: inline-block;
 }
 
 .text-info.three > .inner .text.top {
     background-color: #27ae60;
-    display: inline-block;
-    padding: .6em;
-    color: #fff;
     font-size: 1.4em;
 }
 
 .text-info.three > .inner .text.bottom {
     font-size: 1em;
-    margin-bottom: 3%;
-    background-color: rgba(255,255,255,.7);
-    display: inline-block;
 }
 
-.text-info.three > .inner .text.more {
-    position: relative;
-    padding-right: 25px;
-    margin-bottom: 7%;
-    border-radius: 3px;
-    background-color: #fff;
-    font-size: .9em;
-    color: #3498db;
-    cursor: pointer;
-}
-
-.text-info.three > .inner .text.more > a {
-    color: #3498db;
-    text-decoration: none;
-    cursor: auto;
-}
-
-.text-info.three > .inner .text.more .triangle {
-    display: block;
-    position: absolute;
-    right: -15px;
-    top: 30%;
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid #3498db;
-}
 /* EO Slider Text Info Three */
 
-/* Slider Text Info Two */
-
-
+/* Slider Text Info Four */
 .text-info.four {
-    position: absolute;
-    display: block;
     top:5%;
-    width: 100%;
-
 }
 .text-info.four > .inner {
-    padding-right: 15%;
     text-align: right;
-    max-width: 960px;
-    margin:auto;
 }
 
 .text-info.four > .inner > .wrapper {
-    width: 220px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
     display: inline-block;
     position: relative;
     background-color: rgba(0,0,0,.6);
@@ -317,11 +261,6 @@
     left: 0;
     top: 0;
     height: 100%;
-}
-
-.text-info.four > .inner .text {
-    padding: 10px 10px;
-    display: inline-block;
 }
 
 .text-info.four > .inner .text.top {
@@ -345,19 +284,16 @@
 .text-info.four > .inner .text.more {
     position: absolute;
     width: 100%;
+    bottom: 10px;
     margin: 0;
     padding: 10px 10px 10px 10px;
     background-color: transparent;
     text-align: right;
     box-sizing: border-box;
-    color: #3498db;
-    cursor: pointer;
 }
 
 .text-info.four > .inner .text.more > a {
     color: #2ecc71;
-    text-decoration: none;
-    cursor: auto;
 }
 
 .text-info.four > .inner .text.more .triangle {
@@ -366,69 +302,113 @@
 
 /* EO Slider Text Info Four */
 
-/* Slider Text Info One */
+/* Slider Text Info Five */
 
 .text-info.five {
-    position: absolute;
     right: 0;
     bottom: 0;
     text-align: right;
-    width: 100%;
-
-}
-.text-info.five > .inner {
-    padding-right: 15%;
-    max-width: 960px;
-    margin:auto;
-}
-
-.text-info.five > .inner .text {
-    padding: 10px 10px;
-    display: inline-block;
 }
 
 .text-info.five > .inner .text.top {
     background-color: #95a5a6;
-    display: inline-block;
-    padding: .6em;
-    color: #fff;
     font-size: 1.4em;
 }
 
 .text-info.five > .inner .text.bottom {
     font-size: 1em;
-    margin-bottom: 3%;
-    background-color: rgba(255,255,255,.7);
-    display: inline-block;
-}
-
-.text-info.five > .inner .text.more {
-    position: relative;
-    padding-right: 25px;
-    margin-bottom: 7%;
-    border-radius: 3px;
-    background-color: #fff;
-    font-size: .9em;
-    color: #3498db;
-    cursor: pointer;
-}
-
-.text-info.five > .inner .text.more > a {
-    color: #3498db;
-    text-decoration: none;
-    cursor: auto;
-}
-
-.text-info.five > .inner .text.more .triangle {
-    display: block;
-    position: absolute;
-    right: -15px;
-    top: 30%;
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid #3498db;
 }
 
 /* EO Slider Text Info Five */
+
+
+/* @media */
+
+
+@media all and ( min-width: 420px ) {
+
+}
+
+@media all and ( min-width: 480px ) {
+
+}
+
+@media all and ( max-width: 599px ) {
+    .my-slider .text-info {
+        display: none;
+    }
+}
+
+@media all and ( min-width: 600px ) {
+    .my-slider .text-info > .inner .text.top {
+        font-size: 1em;
+        display: inline-block;
+    }
+    .my-slider .text-info > .inner .text.bottom {
+        display: none;
+    }
+    .my-slider .text-info > .inner .text.more {
+        display: none;
+    }
+
+    .my-slider .text-info.two > .inner .text.top {
+        padding: 40% 26px 5px;
+    }
+    .my-slider .text-info.two > .inner > .wrapper {
+        width: 150px;
+        height: 150px;
+    }
+    .my-slider .text-info.four > .inner > .wrapper {
+        width: 150px;
+        height: 100px;
+    }
+}
+
+@media all and ( min-width: 800px ) {
+    .my-slider .text-info > .inner .text.top {
+        font-size: 1.1em;
+        display: inline-block;
+    }
+    .my-slider .text-info > .inner .text.bottom {
+        font-size: .8em;
+        display: inline-block;
+    }
+    .my-slider .text-info > .inner .text.more {
+        font-size: .8em;
+        display: inline-block;
+    }
+
+    .my-slider .text-info.two > .inner .text.top {
+        padding: 20px 26px 5px;
+    }
+    .my-slider .text-info.two > .inner > .wrapper {
+        width: 210px;
+        height: 210px;
+    }
+    .my-slider .text-info.four > .inner > .wrapper {
+        width: 210px;
+        height: 210px;
+    }
+}
+
+@media all and ( min-width: 960px ) {
+    .my-slider .text-info > .inner .text.top {
+        font-size: 1.1em;
+    }
+    .my-slider .text-info > .inner .text.bottom {
+        font-size: 1em;
+        display: inline-block;
+    }
+    .my-slider .text-info > .inner .text.more {
+        font-size: .9em;
+        display: inline-block;
+    }
+}
+
+@media all and ( min-width: 1024px ) {
+
+}
+
+@media all and ( min-width: 1300px ) {
+
+}

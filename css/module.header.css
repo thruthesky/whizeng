@@ -8,7 +8,8 @@ header {
 header .logo img {
     display:block;
     max-width: 100%;
-    max-height: 120px;
+    padding: 10px 0;
+    max-height: 100px;
 }
 
 /** EO Logo */
