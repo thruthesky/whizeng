@@ -1,3 +1,5 @@
+<img src="<?php id()?>/level-test.png">
+
 <h2>Menu 3</h2>
 
 
