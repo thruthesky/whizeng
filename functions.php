@@ -21,6 +21,8 @@ add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style( 'state', td() . '/css/state.css' );
     wp_enqueue_style( 'state.header', td() . '/css/state.header.css' );
     wp_enqueue_style( 'theme', td() . '/css/theme.css' );
+    wp_enqueue_style( 'register', td() . '/css/register.css' );
+    wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/etc/font-awesome/css/font-awesome.min.css');
 
     wp_enqueue_style( 'dashicons' );
     wp_enqueue_script( 'wp-util' );
@@ -32,13 +34,21 @@ add_action( 'wp_enqueue_scripts', function () {
 });
 
 
-add_filter('template_redirect', function () {
-    global $wp_query;
-    if ( is_404() ) {
-        status_header( 200 );
-        $wp_query->is_404=false;
-    }
-});
+abc_register_route( array(
+    'log-in',
+    'register',
+    'help',
+    'about-us',
+    'level-test',
+    'enrollment',
+    'curriculum',
+    'reservation',
+) );
+
+
+
+
+
 
 
 add_action('after_setup_theme', function () {
