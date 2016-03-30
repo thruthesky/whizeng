@@ -37,6 +37,12 @@ jQuery( function( $ ) {
 
     $('.lost-password-button').click(function(){
         $('section.log-in').hide();
+        $('.lost-password').show();
+    });
+
+    $('.lost-password .cancel').click(function(){
+        $('section.log-in').show();
+        $('.lost-password').hide();
     });
 
     /*

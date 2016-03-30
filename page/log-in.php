@@ -41,34 +41,21 @@ wp_enqueue_script( 'log-in', td() . '/js/log-in.js', array('jquery'), false, tru
 </section>
 
 
-    <section class="lost-password">
+    <section class="lost-password" style="display:none;">
         <form action="<?php echo home_url('/wp-login.php')?>?action=lostpassword" method="POST">
-            <?php wp_nonce_field('log-in'); ?>
             <input type="hidden" name="redirect_to" value="<?php echo home_url('/log-in?action=lostpassword')?>">
-
             <div class="row">
                 <label class="caption" for="user_login">User ID or Email</label>
                 <div class="text"><input type="text" name="user_login" maxlength="64" id="user_login" tabindex="100"></div>
             </div>
-
-            <div class="row spinner" style="display:none;">
-                <i class="fa fa-spinner fa-spin"></i> Connecting to server ...
-            </div>
-
-            <div class="row error" style="display:none;"></div>
-
             <div class="row submit">
                 <div class="text"><input class="abc-button" type="submit" value="Send me new password" tabindex="121"></div>
             </div>
 
+            <div class="row cancel">
+                <div class="text abc-button cancel">Cancel</div>
+            </div>
 
         </form>
     </section>
-
-
-
-<?php echo do_shortcode("[bbp-login]");?>
-<?php echo do_shortcode("[bbp-lost-pass]");?>
-
-
 

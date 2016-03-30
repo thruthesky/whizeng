@@ -34,7 +34,7 @@
                                     <span><?php _e('Admin', 'whizeng')?></span>
                                 </a>
                             <?php else : ?>
-                                <a href="<?php hd()?>log-in">
+                                <a href="<?php hd()?>register">
                                     <span><?php _e('Profile Update', 'whizeng')?></span>
                                 </a>
                             <?php endif ?>
