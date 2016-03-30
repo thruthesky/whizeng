@@ -1,4 +1,5 @@
 jQuery( function( $ ) {
+    var $error = $('.line.error');
     $('section.register form').submit ( function (e) {
         e.preventDefault();
         on_submit();
@@ -9,17 +10,22 @@ jQuery( function( $ ) {
         });
     });
     function on_submit() {
-        $('.row.spinner').show();
-        $('.row.submit').hide();
-        $('.row.error').hide();
+        $('.line.spinner').show();
+        $('.line.submit').hide();
+        $error.hide();
     }
     function on_result(re) {
         setTimeout(function(){
-            $('.row.spinner').hide();
+            $('.line.spinner').hide();
             if ( re['code'] ) {
-                $('.row.submit').show();
-                var $error = $('.row.error');
+                $('.line.submit').show();
+                var $error = $('.line.error');
                 $error.html( '<i class="fa fa-exclamation-triangle"></i> ' + re['message'] );
+                $error.show();
+            }
+            else if ( typeof re['code'] == 'undefined' ) {
+                $('.line.submit').show();
+                $error.html( '<i class="fa fa-exclamation-triangle"></i> Server Internal Error ...');
                 $error.show();
             }
             else {
@@ -27,4 +33,5 @@ jQuery( function( $ ) {
             }
         }, 500);
     }
+
 });

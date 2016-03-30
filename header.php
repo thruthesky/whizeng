@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Whiz English</title>
     <?php wp_head();?>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <script>
         var home_url = "<?php echo home_url()?>";
     </script>
 </head>
-<body <?php body_class( '' ); ?>>
+<body <?php body_class( is_front_page() ? 'front' : '' ); ?>>
 
 <div class="layout">
 
@@ -34,7 +35,7 @@
                                     <span><?php _e('Admin', 'whizeng')?></span>
                                 </a>
                             <?php else : ?>
-                                <a href="<?php hd()?>register">
+                                <a href="<?php hd()?>user-update">
                                     <span><?php _e('Profile Update', 'whizeng')?></span>
                                 </a>
                             <?php endif ?>
@@ -92,14 +93,7 @@
 
     <section class="content">
 
-        <aside class="sidebar">
-            <ul>
-                <li><a href="#1"><img src="<?php echo td() . '/img/skype_id.png' ?>" ></a></li>
-                <li><a href="#2"><img src="<?php echo td() . '/img/slide_menu_testing.png' ?>"></a></li>
-                <li><a href="#3"><img src="<?php echo td() . '/img/slide_menu_tv.png' ?>"></a></li>
-                <li><a href="#4"><img src="<?php echo td() . '/img/slide_menu_ve.png' ?>"></a></li>
-            </ul>
-        </aside>
+        <?php include 'part/aside.php'; ?>
 
         <section class="data">
 

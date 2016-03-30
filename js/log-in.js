@@ -11,21 +11,21 @@ jQuery( function( $ ) {
         });
     });
     function on_submit() {
-        $log_in_form.find('.row.spinner').show();
-        $log_in_form.find('.row.submit').hide();
-        $log_in_form.find('.row.error').hide();
+        $log_in_form.find('.line.spinner').show();
+        $log_in_form.find('.line.submit').hide();
+        $log_in_form.find('.line.error').hide();
     }
     function on_result(re) {
-        var $error = $('.row.error');
+        var $error = $('.line.error');
         setTimeout(function(){
-            $('.row.spinner').hide();
+            $('.line.spinner').hide();
             if ( re['code'] ) {
-                $('.row.submit').show();
+                $('.line.submit').show();
                 $error.html( '<i class="fa fa-exclamation-triangle"></i> ' + re['message'] );
                 $error.show();
             }
             else if ( typeof re['code'] == 'undefined' ) {
-                $('.row.submit').show();
+                $('.line.submit').show();
                 $error.html( '<i class="fa fa-exclamation-triangle"></i> Server Internal Error ...');
                 $error.show();
             }
@@ -47,9 +47,9 @@ jQuery( function( $ ) {
 
     /*
     var $pass = $('.lost-password');
-    var $spin = $pass.find('.row.spinner');
-    var $submit = $pass.find('.row.submit');
-    var $error = $pass.find('.row.error');
+    var $spin = $pass.find('.line.spinner');
+    var $submit = $pass.find('.line.submit');
+    var $error = $pass.find('.line.error');
 
     $pass.find('form').submit ( function (e) {
         e.preventDefault();
@@ -68,7 +68,7 @@ jQuery( function( $ ) {
     }
     function on_pass_result(re) {
         setTimeout(function(){
-            $('.row.spinner').hide();
+            $('.line.spinner').hide();
             if ( re['code'] ) {
                 $submit.show();
                 $error.html( '<i class="fa fa-exclamation-triangle"></i> ' + re['message'] );

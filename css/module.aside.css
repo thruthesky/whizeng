@@ -1,23 +1,26 @@
 aside.sidebar {
-    background-color: #ebf1fc;
     overflow: auto;
     z-index: 1234567890;
+    margin-bottom: .3em;
 }
 
 .sidebar ul {
-    margin: 0;
-    padding: 2px;
+    position:relative;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .sidebar ul li {
     float:left;
     width: 25%;
     text-align: center;
-    box-sizing: border-box;
-    padding: 2px;
+}
+.sidebar ul li a {
+    display: block;
 }
 .sidebar ul li img {
+    display: block;
     width: 100%;
     height: auto;
 }
@@ -29,13 +32,13 @@ aside.sidebar {
         right: 0;
     }
     .sidebar ul{
-        background-color: #c38a91;
+
     }
     .sidebar ul li {
         float: none;
+        margin-bottom: .2em;
         border: 0;
         width: 100px;
-        background-color: #c38a91;
     }
     .sidebar ul li img {
         width: 95%;
@@ -46,9 +49,7 @@ aside.sidebar {
 
 @media all and ( min-width: 1200px ) {
     aside.sidebar {
-        right: -108px;
-    }
-    body.home aside.sidebar {
-        right: 0;
+        left: .3em;
+        right: auto;
     }
 }

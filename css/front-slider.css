@@ -1,0 +1,10 @@
+.home .my-slider {
+    margin-bottom: .3em;
+}
+.home .my-slider nav img:first-child {
+    left: 10vw;
+}
+.home .my-slider nav img:last-child {
+    right: 10vw;
+}
+

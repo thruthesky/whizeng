@@ -1,29 +1,25 @@
 <?php
-wp_enqueue_script( 'register', td() . '/js/register.js', array('jquery') );
+wp_enqueue_script( 'user-update', td() . '/js/user-update.js', array('jquery') );
 ?>
-<h2>Register</h2>
-<section class="register">
-    <form action="<?php echo home_url('/abc/user/registerSubmit')?>" method="POST">
+<h2>Profile Update</h2>
+<section class="user-update">
+    <form action="<?php echo home_url('/abc/user/updateSubmit')?>" method="POST">
         <?php wp_nonce_field('register'); ?>
-
-        <input type="hidden" name="login" value="1">
-
 
         <div class="line">
             <label for="user_login">User ID</label>
             <div class="text">
-                    <input type="text" name="user_login" maxlength="64" id="user_login" tabindex="101">
+                <?php echo user()->user_login?>
             </div>
         </div>
 
-            <div class="line">
-                <label for="user_pass">Password</label>
-                <div class="text">
-                    <input type="password" name="user_pass" maxlength="64" id="user_pass" tabindex="101" placeholder="Input password ...">
-                </div>
+
+        <div class="line">
+            <label for="user_pass"><i class="fa fa-lock"></i> Do you want to change password?</label>
+            <div class="text" style="display:none;">
+                <input type="password" name="user_pass" maxlength="64" id="user_pass" tabindex="101" placeholder="Input password ...">
             </div>
-
-
+        </div>
 
         <div class="line">
             <label for="user_email">Email</label>
