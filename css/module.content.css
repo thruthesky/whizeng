@@ -10,6 +10,68 @@ section.content {
     background-color: #e8e800;
 }
 
+/* Two Column Grid*/
+.grid {
+    width: 100%;
+}
+
+.grid > div {
+    box-sizing: border-box;
+}
+
+.grid .front-banner {
+    display: block;
+    width: 100%;
+}
+
+.grid.second .front-banner {
+    display: inline-block;
+    width: 33.33%;
+}
+
+.grid.second .front-banner > img {
+    display: block;
+    width: 100%;
+}
+
+.grid .c.one {
+    padding: 0 5px 0 0;
+}
+
+.grid .c.two {
+    padding: 0 0 0 5px;
+}
+
+
+
+@media (max-width: 599px){
+    .grid .c.one, .grid .c.two {
+        float: none;
+        width: 100%;
+    }
+    .grid .c.one {
+        padding: 0;
+    }
+
+    .grid .c.two {
+        padding: 0;
+    }
+}
+@media (min-width: 600px){
+    .grid .c.one, .grid .c.two {
+        float: left;
+        width: 50%;
+    }
+}
+
+
+.grid:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+
 /*bottom-icon-menus*/
 .bottom-icon-menus {
     background-color:#1abc9c;
