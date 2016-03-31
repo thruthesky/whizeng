@@ -25,24 +25,30 @@
 
 }
 
-.home .info .left {
-
+.home.front  .info > div {
+    text-align: center;
+}
+.home.front  .info h2 {
+    font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
+    color: #fff;
 }
 
-.home .info .left img {
-    width: 100%;
+.home.front .info.container {
+    padding: 100px;
 }
 
+.home.front .info.container .info.text {
+    padding: 50px 0;
+}
 
-.home .info  .right {
-    overflow: auto;
-    overflow-y: hidden;
+.home.front .info div .text.info {
+    font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
+    font-size: 20px;
+    padding: 0 26px;
+    color: #fff;
 }
-.home .info  .right a {
-    display:block;
-    float: left;
-    width: 33.33%;
+
+.home.front .info > div img {
+    padding: 0 109px ;
 }
-.home .info  .right img {
-    width:100%;
-}
+

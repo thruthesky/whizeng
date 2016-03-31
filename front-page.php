@@ -3,7 +3,7 @@ get_header();
 include 'part/front-slider.php';
 include 'part/front-info.php';
 ?>
-    <section class="desc">
+    <!--section class="desc">
         <div>
             <img src="<?php id() ?>home_02.png" >
         </div>
@@ -27,7 +27,7 @@ include 'part/front-info.php';
         <div>
             <img src="<?php id() ?>home_06.png" >
         </div>
-    </section>
+    </section-->
 <?php
 include 'part/front-icon-menu.php';
 get_footer();
