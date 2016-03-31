@@ -18,9 +18,12 @@ body.home section.content {
 }
 
 
-
 .content section.info > div,
-.content section.desc > div {
+.content section.desc > div,
+.content section.gallery > div,
+.content section.book > div,
+.content section.book1 > div,
+.content section.testimonial > div {
     margin: 0 auto;
     max-width: 980px;
 }

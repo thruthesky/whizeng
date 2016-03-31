@@ -13,7 +13,6 @@
 <body <?php body_class( is_front_page() ? 'front' : '' ); ?>>
 
 <div class="layout">
-
     <header>
         <div class="header-inner">
             <?php
