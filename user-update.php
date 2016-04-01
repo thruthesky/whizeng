@@ -3,7 +3,7 @@ wp_enqueue_script( 'user-update', td() . '/js/user-update.js', array('jquery') )
 ?>
 <h2>Profile Update</h2>
 <section class="user-update">
-    <form action="<?php echo home_url('/abc/user/updateSubmit')?>" method="POST">
+    <form action="<?php echo home_url('/user/updateSubmit')?>" method="POST">
         <?php wp_nonce_field('register'); ?>
 
         <div class="line">
