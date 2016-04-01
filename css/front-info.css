@@ -25,30 +25,30 @@
 
 }
 
-.home.front  .info > div {
+.home.front .content .data >  .info > div {
     text-align: center;
 }
-.home.front  .info h2 {
-    font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
+.home.front .content .data >  .info h2 {
+    display: inline-block;
     color: #fff;
+    margin-top: 10%;
+    font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
+    font-size: 2em;
+    font-weight: bold;
 }
 
-.home.front .info.container {
-    padding: 100px;
+.home.front .content .data >  .info.container {
+    padding: 0;
 }
 
-.home.front .info.container .info.text {
-    padding: 50px 0;
-}
-
-.home.front .info div .text.info {
+.home.front .content .data >  .info div .text.info {
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
     font-size: 20px;
-    padding: 0 26px;
+    padding: 4vw 0;
     color: #fff;
 }
 
-.home.front .info > div img {
-    padding: 0 109px ;
+.home.front .content .data >  .info > div img {
+    padding: 0 6vw;
 }
 
