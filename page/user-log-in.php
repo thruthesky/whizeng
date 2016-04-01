@@ -1,8 +1,12 @@
 <?php
 wp_enqueue_script( 'log-in', td() . '/js/log-in.js', array('jquery'), false, true );
 wp_enqueue_style('info', td() . '/css/log-in.css');
+
 ?>
 <h2>Page/Login</h2>
+<?php if ( in('action') == 'lostpassword' ) { ?>
+    <?php _e('Password reset link has been sent to your email.') ?>
+<?php } ?>
 <section class="log-in">
     <form action="<?php echo home_url('/user/loginSubmit')?>" method="POST">
 
@@ -35,27 +39,9 @@ wp_enqueue_style('info', td() . '/css/log-in.css');
     </form>
 
 
-    <div class="abc-button lost-password-button">Lost Password?</div>
+    <div class="lost-password-button">
+        <a href="<?php echo home_url('/user-password-lost')?>">Lost Password?</a>
+    </div>
 
-    <a href="<?php echo home_url('/register')?>">Register</a>
+    <a href="<?php echo home_url('/user-register')?>">Register</a>
 </section>
-
-
-<section class="lost-password" style="display:none;">
-    <form action="<?php echo home_url('/wp-login.php')?>?action=lostpassword" method="POST">
-        <input type="hidden" name="redirect_to" value="<?php echo home_url('/log-in?action=lostpassword')?>">
-        <div class="line">
-            <label class="caption" for="user_login">User ID or Email</label>
-            <div class="text"><input type="text" name="user_login" maxlength="64" id="user_login" tabindex="100"></div>
-        </div>
-        <div class="line submit">
-            <div class="text"><input class="abc-button" type="submit" value="Send me new password" tabindex="121"></div>
-        </div>
-
-        <div class="line cancel">
-            <div class="text abc-button cancel">Cancel</div>
-        </div>
-
-    </form>
-</section>
-

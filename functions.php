@@ -7,6 +7,14 @@
  * Load library
  */
 
+if ( ! defined('ABC_LIBRARY') ) {
+    echo "whizeng/functions.php: Activate ABC-Library";
+    return;
+}
+
+/**
+ *
+ */
 add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style( 'style', td() . '/style.css' );
     wp_enqueue_style( 'base', td() . '/css/base.css' );
@@ -32,25 +40,24 @@ add_action( 'wp_enqueue_scripts', function () {
 });
 
 
-abc_register_route( array(
-    'log-in',
-    'register',
-    'user-update',
-    'help',
-    'about-us',
-    'level-test',
-    'enrollment',
-    'curriculum',
-    'reservation',
-) );
-
-
-
-
-
-
 
 add_action('after_setup_theme', function () {
     if ( function_exists('remove_admin_bar') ) remove_admin_bar(true);
     load_theme_textdomain('whizeng', get_template_directory());
 });
+
+
+if ( function_exists('abc_register_route') ) {
+    abc_register_route( array(
+        'user-log-in',
+        'user-register',
+        'user-update',
+        'user-password-lost',
+        'help',
+        'about-us',
+        'level-test',
+        'enrollment',
+        'curriculum',
+        'reservation',
+    ) );
+}

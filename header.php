@@ -39,7 +39,7 @@
                                 </a>
                             <?php endif ?>
                         <?php else : ?>
-                            <a href="<?php hd()?>log-in">
+                            <a href="<?php hd()?>user-log-in">
                                 <span><?php _e('Login', 'whizeng')?></span>
                             </a>
                         <?php endif ?>
@@ -50,7 +50,7 @@
                                 <span><?php _e('Logout', 'whizeng')?></span>
                             </a>
                         <?php else : ?>
-                            <a href="<?php hd()?>register">
+                            <a href="<?php hd()?>user-register">
                                 <span><?php _e('Register', 'whizeng')?></span>
                             </a>
                         <?php endif ?>
