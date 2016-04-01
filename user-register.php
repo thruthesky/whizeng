@@ -3,7 +3,7 @@ wp_enqueue_script( 'register', td() . '/js/register.js', array('jquery') );
 ?>
 <h2>Register</h2>
 <section class="register">
-    <form action="<?php echo home_url('/abc/user/registerSubmit')?>" method="POST">
+    <form action="<?php echo home_url('/user/registerSubmit')?>" method="POST">
         <?php wp_nonce_field('register'); ?>
 
         <input type="hidden" name="login" value="1">
