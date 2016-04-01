@@ -35,19 +35,4 @@ jQuery( function( $ ) {
         }, 500);
     }
 
-    /**
-     *
-     * Apr 1, 2016 - Separate password lost page.
-     *
-    $('.lost-password-button').click(function(){
-        $('section.log-in').hide();
-        $('.lost-password').show();
-    });
-
-    $('.lost-password .cancel').click(function(){
-        $('section.log-in').show();
-        $('.lost-password').hide();
-    });
-     */
-
 });

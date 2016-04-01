@@ -61,3 +61,19 @@ if ( function_exists('abc_register_route') ) {
         'reservation',
     ) );
 }
+
+abc()->registerRoute(
+    [
+        'intro',
+        'user-log-in',
+        'user-register',
+        'user-update',
+        'user-password-lost',
+        'help',
+        'about-us',
+        'level-test',
+        'enrollment',
+        'curriculum',
+        'reservation',
+    ]
+);

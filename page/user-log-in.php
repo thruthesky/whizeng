@@ -3,6 +3,8 @@ wp_enqueue_script( 'log-in', td() . '/js/log-in.js', array('jquery'), false, tru
 wp_enqueue_style('info', td() . '/css/log-in.css');
 
 ?>
+
+
 <h2>Page/Login</h2>
 <?php if ( in('action') == 'lostpassword' ) { ?>
     <?php _e('Password reset link has been sent to your email.') ?>
