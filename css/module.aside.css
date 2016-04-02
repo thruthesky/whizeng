@@ -48,8 +48,11 @@ aside.sidebar {
 
 
 @media all and ( min-width: 1200px ) {
-    aside.sidebar {
+    .sidebar {
         left: -100px;
         right: auto;
+    }
+    .home .sidebar {
+        left: .6em; /* content padding */
     }
 }
