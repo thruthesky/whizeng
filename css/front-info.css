@@ -25,24 +25,30 @@
 
 }
 
-.home .info .left {
-
+.home.front .content .data >  .info > div {
+    text-align: center;
+}
+.home.front .content .data >  .info h2 {
+    display: inline-block;
+    color: #fff;
+    margin-top: 10%;
+    font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
+    font-size: 2em;
+    font-weight: bold;
 }
 
-.home .info .left img {
-    width: 100%;
+.home.front .content .data >  .info.container {
+    padding: 0;
 }
 
+.home.front .content .data >  .info div .text.info {
+    font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
+    font-size: 20px;
+    padding: 4vw 0;
+    color: #fff;
+}
 
-.home .info  .right {
-    overflow: auto;
-    overflow-y: hidden;
+.home.front .content .data >  .info > div img {
+    padding: 0 6vw;
 }
-.home .info  .right a {
-    display:block;
-    float: left;
-    width: 33.33%;
-}
-.home .info  .right img {
-    width:100%;
-}
+

@@ -26,9 +26,7 @@ header nav.menu, nav.top-menu {
 }
 
 nav.top-menu {
-    background-color: #1abc9c;
     border-radius: 0 0 5px 5px;
-    font-weight: bold;
     color:white;
 }
 
@@ -49,6 +47,11 @@ nav.top-menu ul li {
 }
 nav.top-menu ul li:last-child {
     float:right;
+}
+
+header .top-menu ul li:nth-child(2):after,
+header .top-menu ul li:nth-child(3):after {
+    content: '|';
 }
 
 nav.top-menu ul li a {
@@ -90,17 +93,18 @@ header .menu ul {
 }
 
 header .menu ul li {
+
 }
 
 header .menu ul li a {
+    font-size: 1.1em;
     display: block;
-    padding: .2em .6em;
+    padding: .4em .6em;
     /*background-color: #06112d;*/
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
     color:white;
 }
+
 
 header .menu ul li a:hover {
     background-color: #2c3e50;
