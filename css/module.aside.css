@@ -26,7 +26,7 @@ aside.sidebar {
 }
 
 @media all and ( min-width: 600px ) {
-    aside.sidebar {
+    .sidebar {
         position: absolute;
         top: 100px;
         right: 0;
