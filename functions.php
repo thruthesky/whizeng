@@ -47,28 +47,9 @@ add_action('after_setup_theme', function () {
 });
 
 
-if ( function_exists('abc_register_route') ) {
-    abc_register_route( array(
-        'user-log-in',
-        'user-register',
-        'user-update',
-        'user-password-lost',
-        'help',
-        'about-us',
-        'level-test',
-        'enrollment',
-        'curriculum',
-        'reservation',
-    ) );
-}
 
 abc()->registerRoute(
     [
-        'intro',
-        'user-log-in',
-        'user-register',
-        'user-update',
-        'user-password-lost',
         'help',
         'about-us',
         'level-test',
