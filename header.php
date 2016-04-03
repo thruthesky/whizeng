@@ -19,8 +19,7 @@
 
             ?>
             <div class="logo">
-                <a href="<?php echo home_url()?>"><img src="<?php option('lms', 'logo')?>"></a>
-                <!--a href="<?php //echo home_url()?>"><img src="<?php //opt('lms[logo]', id() . 'logo.jpg')?>"></a-->
+                <a href="<?php echo home_url()?>"><img src="<?php opt('lms[logo]', id() . 'logo.jpg')?>"></a>
             </div>
             <nav class="top-menu">
                 <ul>
@@ -56,8 +55,8 @@
                         <?php endif ?>
                     </li>
                     <li>
-                        <a href="<?php hd()?>help">
-                            <span><?php _e('Help', 'whizeng')?></span>
+                        <a href="<?php hd()?>menu-all">
+                            <span><?php _e('All Menu', 'whizeng')?></span>
                         </a>
                     </li>
                 </ul>

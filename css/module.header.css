@@ -4,10 +4,9 @@ header {
 }
 
 /** Logo */
-
 header .logo img {
     max-width: 100%;
-    padding: 29px 0;
+    max-height: 120px;
 }
 
 @media all and ( max-width: 600px ) {

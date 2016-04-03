@@ -50,7 +50,7 @@ add_action('after_setup_theme', function () {
 
 abc()->registerRoute(
     [
-        'help',
+        'menu-all',
         'about-us',
         'level-test',
         'enrollment',
@@ -58,3 +58,48 @@ abc()->registerRoute(
         'reservation',
     ]
 );
+
+
+/**
+ * @return array|mixed|object
+ *
+
+[idx] => 18070
+[id] => Pia
+[name] => Pia Joy Soriano
+[nickname] => Manager Pia
+[classid] => ontue.teacher.135
+[url_youtube] => http://youtu.be/bXM3FP6iL1Q
+[photo] => ./data/teacher/primary_photo_18070
+[teaching_year] => 5
+[birthday] => 19881121
+[greeting] =>
+Hello there!! ..This is Manager Pia.  If you have any problems in the class, I'm willing to help you.
+
+
+[major] => Bachelor of Science in Nursing
+[gender] => F
+ */
+function teacher_list() {
+    $url = 'http://witheng.com/teacher.info_json.php';
+    $cid = 'teacher-list';
+    $response = get_transient( $cid );
+    if( false === $response ) {
+        $response = wp_remote_get( $url );
+        set_transient( $cid, $response, 60 * 60 ); // 1시간 동안 캐시
+    }
+    return json_decode( $response['body'], true );
+}
+
+function youtube_tag($url, $w=640, $h=390) {
+    $arr = explode('/', $url);
+    $id = end( $arr );
+    return <<<EOH
+    <iframe width="214" height="120" src="http://www.youtube.com/embed/$id?autohide=1&controls=0" border="0" scrolling="no"></iframe>
+EOH;
+}
+function trim_greeting( $str ) {
+    $str = stripslashes($str);
+    $str = strip_tags($str);
+    return $str;
+}

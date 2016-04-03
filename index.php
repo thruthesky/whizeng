@@ -1,5 +1,7 @@
 <?php
 abc()->header();
+
+
 if ( abc()->route() ) echo abc()->getTemplate();
 else if ( have_posts() ) {
     while ( have_posts() ) {
