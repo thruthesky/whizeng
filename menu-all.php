@@ -1,43 +1,4 @@
-<h2>Help</h2>
+Profile Update / Logout<br>
+About us, Level Test, Enrollment, Curriculum, Reservation, Q&A<br>
 
-<?php
-
-
-$teachers = teacher_list();
-if ( empty($teachers) ) {
-    echo "No teachers";
-    return;
-}
-?>
-
-
-<style>
-    .teachers {
-
-    }
-    .teachers .teacher {
-        margin: 1em 0;
-        background-color: #b0bbf3;
-    }
-    .teachers .teacher .photo {
-
-    }
-    .teachers .teacher .photo img {
-        width: 100px;
-        height: 120px;
-    }
-</style>
-<section class="teachers">
-<?php foreach ( $teachers as $teacher ) { ?>
-    <div class="teacher">
-        <div class="photo"><img src="http://witheng.com/<?php echo $teacher['photo']?>"></div>
-        <div class="youtube"><?php echo youtube_tag($teacher['url_youtube'])?></div>
-        <div class="name"><?php echo $teacher['name']?></div>
-        <div class="teaching-year">Teacher Years : <?php echo $teacher['teaching_year']?></div>
-        <div class="birthday">Birth day : <?php echo $teacher['birthday']?></div>
-        <div class="greeting"><?php echo trim_greeting($teacher['greeting'])?></div>
-        <div class="major"><?php echo $teacher['major']?></div>
-        <div class="gender"><?php echo $teacher['gender']?></div>
-    </div>
-<?php } ?>
-</section>
+<a href="<?php hd()?>teacher-list">Teacher List</a><br>

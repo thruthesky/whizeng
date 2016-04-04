@@ -59,6 +59,7 @@ abc()->registerRoute(
         'enrollment',
         'curriculum',
         'reservation',
+        'teacher-list',
     ]
 );
 
@@ -84,14 +85,25 @@ Hello there!! ..This is Manager Pia.  If you have any problems in the class, I'm
 [gender] => F
  */
 function teacher_list() {
-    $url = 'http://witheng.com/teacher.info_json.php';
-    $cid = 'teacher-list';
+    $url = 'http://onlineenglish.kr/ajax.php?';
+    $url .= 'id=' . user()->user_login;
+    $url .= '&nickname=' . user()->nickname;
+    $url .= '&name=' . user()->name;
+    $url .= '&email=' . user()->user_email;
+    $url .= '&mobile=' . user()->mobile;
+    $url .= '&landline=' . user()->landline;
+    $url .= '&classid=' . user()->skype;
+    $url .= '&function=teacher_list';
+
+
+    $cid = 'teacher-list' + time() ;
     $response = get_transient( $cid );
     if( false === $response ) {
         $response = wp_remote_get( $url );
         set_transient( $cid, $response, 60 * 60 ); // 1시간 동안 캐시
     }
-    return json_decode( $response['body'], true );
+    $body = json_decode( $response['body'], true );
+    return $body;
 }
 
 function youtube_tag($url, $w=640, $h=390) {

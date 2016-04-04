@@ -28,6 +28,13 @@ wp_enqueue_script( 'user-update', td() . '/js/user-update.js', array('jquery') )
 
 
         <div class="line">
+            <label for="nickname">Nickname</label>
+            <div class="text"><input type="text" name="nickname" maxlength="64" id="nickname" tabindex="101" value="<?php echo user()->nickname?>"></div>
+        </div>
+
+
+
+        <div class="line">
             <label for="name">Name</label>
             <div class="text"><input type="text" name="name" maxlength="64" id="name" tabindex="101" value="<?php echo user()->name?>"></div>
         </div>

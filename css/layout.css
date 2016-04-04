@@ -34,8 +34,10 @@ body.home section.content {
         top: 0;
         left: 0;
         right: 0;
-        height: 120px;
         overflow: hidden;
+    }
+    .header-inner {
+        height: 120px;
     }
     section.content {
         margin: 120px auto 0;

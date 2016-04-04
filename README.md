@@ -23,8 +23,20 @@ Withcenter X version 5
 -
 
 
+# API Protocol
 
-# First update
-March 21, 2016 by Mr. Song
 
-.
+## JSON data format
+
+Server API Endpoint : http://onlineenglish.kr/ajax.php
+
+Data from Client To Server : REST
+
+Data from Server to Client : JSON
+
+### Basic Information
+
+All connection from client to server must have complete profile information.
+
+    id, nickname, name, mobile, landline, email, classid
+

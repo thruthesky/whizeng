@@ -1,15 +1,51 @@
-<h2>Menu 2</h2>
+<h2>Teacher</h2>
+
+<?php
+
+$re = teacher_list();
+
+if ( $re['code'] ) {
+    echo "<h2>$re[message]</h2>";
+    return;
+}
 
 
-따라서 영어는 생활 속에서 매일 반복 되는 것이 제일 좋은 학습입니다.
-사실 우리나라는 영어를 직접 사용하고 말하는 것이 어려운 것이 현실입니다.
-학교에서 학원에서 엄청난 시간을 투자하여 영어공부를 하였으나, 외국인을 만날 때 말 한마디 하기 어려운 것도 사실입니다.
 
-이에 지금의 영어공부방법은 예전에 수동적인 공부방법이 아닌, 능동적인 학습방법인 말하기, 쓰기 를 중점적으로 공부를 해야 한다는 것을 말씀드립니다.
-그리고 현재 공교육체계도 말하기, 쓰기영역으로 바뀌었습니다.
+$teachers = $re['data'];
 
-잉글리쉬 월드 원격영어교육은 연습하고 노력하는 회원분들의 좋은 코치가 되기 위하여 만들어졌습니다.
-이곳에서 계획만 세우셨던 영어말하기 마스터를 이루시기 바랍니다.
-이곳에서 매일매일 시간을 정하여 연습하고 노력하면 영어말하기는 누구나 잘 할 수 있습니다.
 
-감사합니다.
+
+
+?>
+
+
+<style>
+    .teachers {
+
+    }
+    .teachers .teacher {
+        margin: 1em 0;
+        background-color: #b0bbf3;
+    }
+    .teachers .teacher .photo {
+
+    }
+    .teachers .teacher .photo img {
+        width: 100px;
+        height: 120px;
+    }
+</style>
+<section class="teachers">
+    <?php foreach ( $teachers as $teacher ) { ?>
+        <div class="teacher">
+            <div class="photo"><img src="http://witheng.com/<?php echo $teacher['photo']?>"></div>
+            <div class="youtube"><?php echo youtube_tag($teacher['url_youtube'])?></div>
+            <div class="name"><?php echo $teacher['name']?></div>
+            <div class="teaching-year">Teacher Years : <?php echo $teacher['teaching_year']?></div>
+            <div class="birthday">Birth day : <?php echo $teacher['birthday']?></div>
+            <div class="greeting"><?php echo trim_greeting($teacher['greeting'])?></div>
+            <div class="major"><?php echo $teacher['major']?></div>
+            <div class="gender"><?php echo $teacher['gender']?></div>
+        </div>
+    <?php } ?>
+</section>

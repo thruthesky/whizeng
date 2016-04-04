@@ -1,5 +1,17 @@
-
 <h2>Menu 1</h2>
+
+<?php
+
+$re = wp_remote_get('http://onlineenglish.kr/ajax.php');
+$body = $re['body'];
+
+
+di($body);
+
+
+
+
+?>
 
 안녕하세요. 잉글리쉬 월드 원격영어교육입니다.
 
