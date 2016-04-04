@@ -10,7 +10,7 @@ wp_enqueue_style('gallery', td() . '/css/front-gallery.css');
             싶이 튼튼하며, 가슴이 하여도 힘차게 산야에 말이다.
         </div>
         <div>
-            <img src="<?php id() ?>gallery.png" >
+            <img src="<?php img_e() ?>gallery.png" >
         </div>
     </div>
 </section>

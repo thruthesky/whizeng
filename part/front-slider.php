@@ -4,12 +4,12 @@ wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
 ?>
 <div class="my-slider">
     <nav>
-        <img src="<?php id()?>/banner/top_arrow_left.png">
-        <img src="<?php id()?>/banner/top_arrow_right.png">
+        <img src="<?php img_e()?>/banner/top_arrow_left.png">
+        <img src="<?php img_e()?>/banner/top_arrow_right.png">
     </nav>
     <ul>
         <li>
-            <img src="<?php id()?>/banner/banner_1.jpg">
+            <img src="<?php img_e()?>/banner/banner_1.jpg">
             <div class="text-info one">
                 <div class="inner">
                     <div class="wrapper">
@@ -29,7 +29,7 @@ wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
             </div>
         </li>
         <li>
-            <img src="<?php id()?>/banner/banner_2.jpg">
+            <img src="<?php img_e()?>/banner/banner_2.jpg">
             <div class="text-info two">
                 <div class="inner">
                     <div class="wrapper">
@@ -43,7 +43,7 @@ wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
             </div>
         </li>
         <li>
-            <img src="<?php id()?>/banner/banner_3.jpg">
+            <img src="<?php img_e()?>/banner/banner_3.jpg">
             <div class="text-info three">
                 <div class="inner">
                     <div class="wrapper">
@@ -55,7 +55,7 @@ wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
             </div>
         </li>
         <li>
-            <img src="<?php id()?>/banner/banner_4.jpg">
+            <img src="<?php img_e()?>/banner/banner_4.jpg">
             <div class="text-info four">
                 <div class="inner">
                     <div class="wrapper">
@@ -67,7 +67,7 @@ wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
             </div>
         </li>
         <li>
-            <img src="<?php id()?>/banner/banner_5.jpg">
+            <img src="<?php img_e()?>/banner/banner_5.jpg">
             <div class="text-info five">
                 <div class="inner">
                     <div class="wrapper">

@@ -1,4 +1,4 @@
-<img src="<?php id()?>/level-test.png">
+<img src="<?php img_e()?>/level-test.png">
 
 <h2>Menu 3</h2>
 

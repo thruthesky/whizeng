@@ -113,8 +113,8 @@ header .menu ul li a:hover {
 @media all and ( min-width: 600px ) {
     header .menu {
         position: absolute;
-        display: block!important;
-        /*bottom: .1em;*/
+        display: block !important;
+        bottom: 0;
         right: 0;
     }
     header .menu ul li {
@@ -125,17 +125,8 @@ header .menu ul li a:hover {
     }
 }
 
-@media all and ( min-width: 600px ) and ( max-width: 606px ) {
-    header .menu ul li a {
-        padding: .2em .5em;
-    }
-}
 
-@media all and ( min-width: 600px ) and ( max-width: 850px ) {
-    header nav.menu {
-        /*bottom:0;*/
-    }
-}
+
 
 /** eo nav.menu */
 

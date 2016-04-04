@@ -10,7 +10,7 @@ wp_enqueue_style('book', td() . '/css/front-book.css');
             Learn more
         </div>
         <div class="collection">
-            <img src="<?php id() ?>book.png" >
+            <img src="<?php img_e() ?>book.png" >
         </div>
     </div>
 </section>

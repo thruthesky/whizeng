@@ -12,3 +12,10 @@ section.content {
     width: 100%;
     height: auto;
 }
+
+
+@media all and ( min-width: 740px ) {
+    section.content {
+        padding:  0;
+    }
+}

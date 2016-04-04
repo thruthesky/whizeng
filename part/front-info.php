@@ -18,8 +18,8 @@ wp_enqueue_style('info', td() . '/css/front-info.css');
             구하기 싹이 이상, 인간의 얼마나 반짝이는 위하여서. 위하여 바로 영락과 봄날의 피고, 심장은 힘차게 설산에서 사막이다.
         </div>
         <div>
-            <img src="<?php id() ?>info.png" >
+            <img src="<?php img_e() ?>info.png" >
         </div>
-        <!--img src="<?php id() ?>home_01.png" -->
+        <!--img src="<?php img_e() ?>home_01.png" -->
     </div>
 </section>

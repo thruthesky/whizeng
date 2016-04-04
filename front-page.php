@@ -5,7 +5,7 @@ include 'part/front-info.php';
 ?>
     <!--section class="desc">
         <div>
-            <img src="<?php id() ?>home_02.png" >
+            <img src="<?php img_e() ?>home_02.png" >
         </div>
     </section-->
 <?php
