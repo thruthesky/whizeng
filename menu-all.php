@@ -13,7 +13,7 @@ if ( empty($teachers) ) {
 
 <style>
     .teachers {
-        
+
     }
     .teachers .teacher {
         margin: 1em 0;
