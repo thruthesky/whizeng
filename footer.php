@@ -6,8 +6,8 @@
 <footer>
 
     <div class="grid3"">
-        <div class="content footer-menu">
-            <div class="a">
+        <div class="content row footer-menu">
+            <div class="col-sm-4">
                 <div class="footer-list menus">
                     <div class="footer-list-title">
                         빠른메뉴
@@ -23,7 +23,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="b">
+            <div class="col-sm-4">
                 <div class="footer-list address">
                     <div class="footer-list-title">
                         연락처
@@ -45,7 +45,7 @@
                     </div>
                 </div>
             </div>
-            <div class="c">
+            <div class="col-sm-4">
                 <div id="contactUs" class="footer-list contact">
                     <div class="footer-list-title">
                         문의하기

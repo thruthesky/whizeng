@@ -19,7 +19,7 @@
 
             ?>
             <div class="logo">
-                <a href="<?php echo home_url()?>"><img src="<?php opt('lms[logo]', id() . 'logo.jpg')?>"></a>
+                <a href="<?php echo home_url()?>"><img src="<?php opt('lms[logo]', 'logo.jpg')?>"></a>
             </div>
             <nav class="top-menu">
                 <ul>
